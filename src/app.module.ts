@@ -6,6 +6,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { FotoModule } from './foto/foto.module';
 import { FotoEntity } from './foto/foto.entity/foto.entity';
+import { UsuarioModule } from './usuario/usuario.module';
+import { RedSocialModule } from './red-social/red-social.module';
+import { AlbumModule } from './album/album.module';
 
 @Module({
   imports: [FotoModule,
@@ -21,6 +24,9 @@ import { FotoEntity } from './foto/foto.entity/foto.entity';
     synchronize: true,
     keepConnectionAlive: true
   }),
+    UsuarioModule,
+    RedSocialModule,
+    AlbumModule,
 ],
   controllers: [AppController],
   providers: [AppService],
