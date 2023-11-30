@@ -9,6 +9,9 @@ import { FotoEntity } from './foto/foto.entity/foto.entity';
 import { UsuarioModule } from './usuario/usuario.module';
 import { RedSocialModule } from './red-social/red-social.module';
 import { AlbumModule } from './album/album.module';
+import { AlbumEntity } from './album/album.entity/album.entity';
+import { RedSocialEntity } from './red-social/red-social.entity/red-social.entity';
+import { UsuarioEntity } from './usuario/usuario.entity/usuario.entity';
 
 @Module({
   imports: [FotoModule,
@@ -18,8 +21,8 @@ import { AlbumModule } from './album/album.module';
     port: 5432,
     username: 'postgres',
     password: 'postgres',
-    database: 'museum',
-    entities: [FotoEntity], 
+    database: 'redesSociales',
+    entities: [FotoEntity,AlbumEntity,RedSocialEntity,UsuarioEntity], 
     dropSchema: true,
     synchronize: true,
     keepConnectionAlive: true
