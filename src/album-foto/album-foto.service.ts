@@ -3,8 +3,8 @@ import { InjectRepository } from '@nestjs/typeorm';
 
 import { Repository } from 'typeorm';
 import { BusinessError,BusinessLogicException } from '../shared/errors/business-errors';
-import { AlbumEntity } from 'src/album/album.entity/album.entity';
-import { FotoEntity } from 'src/foto/foto.entity/foto.entity';
+import { AlbumEntity } from '../album/album.entity/album.entity';
+import { FotoEntity } from '../foto/foto.entity/foto.entity';
 
 @Injectable()
 export class AlbumFotoService {

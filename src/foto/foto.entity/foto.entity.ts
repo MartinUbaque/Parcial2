@@ -1,5 +1,5 @@
-import { AlbumEntity } from 'src/album/album.entity/album.entity';
-import { UsuarioEntity } from 'src/usuario/usuario.entity/usuario.entity';
+import { AlbumEntity } from '../../album/album.entity/album.entity';
+import { UsuarioEntity } from '../../usuario/usuario.entity/usuario.entity';
 import { Column, Entity, ManyToMany, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 
 

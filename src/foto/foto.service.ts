@@ -23,7 +23,7 @@ export class FotoService {
         return foto;
     }
 
-    async create(foto: FotoEntity): Promise<FotoEntity> {
+    async createFoto(foto: FotoEntity): Promise<FotoEntity> {
 
         let cotas=0;
         if (foto.ISO < 100 || foto.ISO>6400) {
@@ -51,7 +51,7 @@ export class FotoService {
     }
 
 
-    async delete(id: string): Promise<void> {
+    async deleteFoto(id: string): Promise<void> {
         const foto: FotoEntity = await this.fotoRepository.findOne({ where: { id } });
         if (!foto) {
             throw new BusinessLogicException('La foto con ese id no fue encontrada.', BusinessError.NOT_FOUND);

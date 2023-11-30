@@ -1,4 +1,4 @@
-import { UsuarioEntity } from 'src/usuario/usuario.entity/usuario.entity';
+import { UsuarioEntity } from '../../usuario/usuario.entity/usuario.entity';
 import { Column, Entity, ManyToMany, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
 
